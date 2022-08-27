@@ -30,11 +30,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+    <p>GIT E GIT HUB</p>
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
+    <p>PYTEST</p>
+  </a>
+  <a href="#flask" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>FLASK</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -48,6 +52,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#flask" class="w3-bar-item w3-button" style="width:25% !important">FLASK</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -65,41 +70,70 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">GIT</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>Primeiramente, antes de tentar entender o que é GitHub, é necessário
+        saber o conceito de controle de versão e Git. Então, vamos lá!
     </p>
-  <div>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p> <b>O que é Controle de Versão?</b> </p>
+    <p> É uma maneira de gerenciar as mudanças ocorridas em um código, ou seja,
+          pode-se dizer que é um sistema que registra alterações em um arquivo ou grupo de arquivos
+          ao longo do tempo, para assim, você se lembrar das versões e recuperar elas. Existem 3
+          tipos de controle de versão, são eles: Centralizados, Distribuidos e Locais.</p>
+    <p><b>-Centralizados:</b> Desenvolvedores trabalham juntos em um único projeto, tendo apenas um repositório.</p>
+    <img src="https://git-scm.com/figures/18333fig0102-tn.png" alt="Centralizado" class="w3-image" width="400" height="400" align = "center">
+    <p>- <b>Distribuidos:</b> Os desenvolvedores do projeto podem trabalhar juntos ao mesmo tempo,
+      com isso, ele é recomendado para projetos que possuem mais de um desenvolvedor onde, todo o repositório é
+      copiado.</p>
+    <img src="https://jkolb.com.br/wp-content/uploads/2018/04/distribuido.png" alt="Distribuido" class="w3-image" width="400" height="400">
+    <p><b>Locais:</b> Ele armazena todos as alterações na máquina.</p>
+    <img src="https://git-scm.com/figures/18333fig0101-tn.png" alt="Local" class="w3-image" width="400" height="400">
+    <p><b>O que é GIT?</b></p>
+    <p>Git é um controle de versões, desenvolvido por Linus Torvalds. Ele é usado
+        para "controlar as versões". No Git, são armazenados snapshots, ou seja, é como se fosse uma
+        foto da situação do sistema naquela hora. Ele registra três estados, são eles: consolidade
+        (commited), modificado(modified) e preparado(staged).</p>
+    <p>> Consolidade: Ficam armazenados na base local.<br/>
+       > Modificado: O arquivos sofre modificações, porém ainda não teve commit.<br/>
+       > Praparado: Arquivos que irão fazer parte do próximo snapshot.</p>
+    <img src="https://i.stack.imgur.com/QaeAZ.png" alt="Estados git" class="w3-image" width="400" height="400">
+    <p>O git também possui vários comandos, abaixo estão listados alguns.</p>
+       
+    <p> Git innit: Para inicializar.<br/>
+        Git add: Ele adiciona o conteúdo ao próximo commit.<br/>
+        Git commit: Registra alterações.<br/>
+        Git status: Para saber quais arquivos estão em quais estados.<br/>
+        Git log: Com ele você pode visualizar o que vem sendo feito em uma branch ou avaliar alterações.
+
     </p>
+
   <div>
       
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
     <h2 class="w3-text-light-grey">PYTEST</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p> Pyteste é um framwork que serve basicamente para o programador
+        fazer testes, ele deve ser escrito na linguagem python e o arquivo deve
+        estar com final ".py". Para fazer a execução, o usuário
+        deverá ir no terminal do aplicativo que está usando e
+        realizar a instalação com o comando pip install pytest
+        e logo depois digitar pytest prosseguido do nome do arquivo. Abaxio está a 
+        foto da resposta gerada de um teste realizado.
     </p>  
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200808170405/EqPytestOuput.png" alt="Pytest" class="w3-image" width="800" height="800">
+    <p>Fonte - Google Imagens</p>
+  </div>
+
+  <div class="w3-padding-64 w3-content" id="flask">
+    <h2 class="w3-text-light-grey">FLASK</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> Flask foi criado por Armin Ronacher, ele é um micro-framwork que usa a
+        linguagem Python para criar aplicações web, ele oferece simplicidade e flexibilidade
+        para o desenvolvedor.Mas o que de fato é framwork? Bom, framwork nada mais é do que
+        códigos prontos com várias funções que serão utilizadas no desenvolvimento de sites.
+        Ou seja, ele ajuda você a simplificar o desenvolvimento, pois você não precisa iniciar
+        seu programa do zero.
+    </p>  
+    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aTrBq-3N4t5iJFdQLsDQHbWA1leBTD8Qzw&usqp=CAU" alt="Pytest" class= "flask" width="600" height="400">
+    <p>Fonte - Google Imagens</p>
     
 
   </div>
