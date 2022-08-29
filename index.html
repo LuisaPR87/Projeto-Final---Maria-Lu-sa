@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Projeto Final - Maria Luísa</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -10,21 +10,31 @@
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
+
 .w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+
+.logoflask {border-radius: 60%;width: 60px;}
+
+.centralizado{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 #main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
+
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 </head>
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
+
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
+  
   <img src="https://img.freepik.com/vetores-premium/icone-de-linha-de-vetor-minimo-de-tempo-de-estudo-no-botao-3d-isolado-em-fundo-preto-vetor-premium_570929-1066.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
@@ -37,7 +47,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>PYTEST</p>
   </a>
   <a href="#flask" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
+   
+    <img src="https://www.seekpng.com/png/detail/875-8753366_flask-framework-logo-svg.png" class ="logoflask">
     <p>FLASK</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -62,7 +73,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">Sejam </span> bem vindos!</h1>
-    <p>Photographer and Web Designer.</p>
+    
     <img src="https://blogdageografia.com/wp-content/uploads/2022/02/nature-g57cb42492_1280-1024x575.jpg" alt="boy" class="w3-image" width="992" height="1108">
   </header>
 
@@ -79,7 +90,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           ao longo do tempo, para assim, você se lembrar das versões e recuperar elas. Existem 3
           tipos de controle de versão, são eles: Centralizados, Distribuidos e Locais.</p>
     <p><b>-Centralizados:</b> Desenvolvedores trabalham juntos em um único projeto, tendo apenas um repositório.</p>
-    <img src="https://git-scm.com/figures/18333fig0102-tn.png" alt="Centralizado" class="w3-image" width="400" height="400" align = "center">
+    <img src="https://git-scm.com/figures/18333fig0102-tn.png" alt="Centralizado" class="centralizado" width="400" height="400>
     <p>- <b>Distribuidos:</b> Os desenvolvedores do projeto podem trabalhar juntos ao mesmo tempo,
       com isso, ele é recomendado para projetos que possuem mais de um desenvolvedor onde, todo o repositório é
       copiado.</p>
@@ -89,7 +100,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p><b>O que é GIT?</b></p>
     <p>Git é um controle de versões, desenvolvido por Linus Torvalds. Ele é usado
         para "controlar as versões". No Git, são armazenados snapshots, ou seja, é como se fosse uma
-        foto da situação do sistema naquela hora. Ele registra três estados, são eles: consolidade
+        foto da situação do sistema naquela hora .Outra caracterísica importante de ressaltar é que
+        quando uma pessoa faz alguma alteração no trabalho é gerado uma nova versão. Ele registra três estados, são eles: consolidade
         (commited), modificado(modified) e preparado(staged).</p>
     <p>> Consolidade: Ficam armazenados na base local.<br/>
        > Modificado: O arquivos sofre modificações, porém ainda não teve commit.<br/>
@@ -102,8 +114,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         Git commit: Registra alterações.<br/>
         Git status: Para saber quais arquivos estão em quais estados.<br/>
         Git log: Com ele você pode visualizar o que vem sendo feito em uma branch ou avaliar alterações.
-
     </p>
+    <p><b>O que é Git Hub</b></p>
+    <p>Git Hub é um servidor git remoto, onde você hospeda os arquivos que estão sendo utilizados
+       no Git. Ele trabalha com repositórios(Pastas do Git para poder armazenar).
+    <p><b>Qual a importância do GitHub?</b></p>
+    <p> A pertir dele, os projetos podem ser desenvolvidos por diversas pessoas de lugares diferentes.
+        
+    </p>
+         
+    <img src="https://www.tadviser.ru/images/d/d6/Thumbnail_1650288823.jpg" alt="git hub" class="w3-image" width="400" height="400">
 
   <div>
       
@@ -127,12 +147,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
     <p> Flask foi criado por Armin Ronacher, ele é um micro-framwork que usa a
         linguagem Python para criar aplicações web, ele oferece simplicidade e flexibilidade
-        para o desenvolvedor.Mas o que de fato é framwork? Bom, framwork nada mais é do que
+        para o desenvolvedor. Mas o que de fato é um framwork? Bom, framwork nada mais é do que
         códigos prontos com várias funções que serão utilizadas no desenvolvimento de sites.
         Ou seja, ele ajuda você a simplificar o desenvolvimento, pois você não precisa iniciar
         seu programa do zero.
     </p>  
-    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aTrBq-3N4t5iJFdQLsDQHbWA1leBTD8Qzw&usqp=CAU" alt="Pytest" class= "flask" width="600" height="400">
+    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aTrBq-3N4t5iJFdQLsDQHbWA1leBTD8Qzw&usqp=CAU" alt="Pytest" class= "flask" width="600" height="400" border-radius= "50%">
     <p>Fonte - Google Imagens</p>
     
 
