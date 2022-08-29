@@ -22,6 +22,32 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   width: 50%;
 }
 
+.distribuido{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.locais{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.box{
+
+  width: 150px;
+  display: inline-block;
+}
+
+.box2{
+
+  width: 150px;
+  display: inline-block;
+}
+
 #main {margin-left: 120px}
 
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
@@ -72,7 +98,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Sejam </span> bem vindos!</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Sejam bem vindos!</h1>
     
     <img src="https://blogdageografia.com/wp-content/uploads/2022/02/nature-g57cb42492_1280-1024x575.jpg" alt="boy" class="w3-image" width="992" height="1108">
   </header>
@@ -89,14 +115,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           pode-se dizer que é um sistema que registra alterações em um arquivo ou grupo de arquivos
           ao longo do tempo, para assim, você se lembrar das versões e recuperar elas. Existem 3
           tipos de controle de versão, são eles: Centralizados, Distribuidos e Locais.</p>
-    <p><b>-Centralizados:</b> Desenvolvedores trabalham juntos em um único projeto, tendo apenas um repositório.</p>
-    <img src="https://git-scm.com/figures/18333fig0102-tn.png" alt="Centralizado" class="centralizado" width="400" height="400>
+    <p><b> &rarr; Centralizados:</b> Desenvolvedores trabalham juntos em um único projeto, tendo apenas um repositório.</p>
+    <img src="https://git-scm.com/figures/18333fig0102-tn.png" alt="Centralizado" class="centralizado" width="400" height="400">
     <p>- <b>Distribuidos:</b> Os desenvolvedores do projeto podem trabalhar juntos ao mesmo tempo,
       com isso, ele é recomendado para projetos que possuem mais de um desenvolvedor onde, todo o repositório é
       copiado.</p>
-    <img src="https://jkolb.com.br/wp-content/uploads/2018/04/distribuido.png" alt="Distribuido" class="w3-image" width="400" height="400">
+    <img src= 'https://jkolb.com.br/wp-content/uploads/2018/04/distribuido.png' alt = 'Distribuido' class="distribuido" width="400" height="400">
     <p><b>Locais:</b> Ele armazena todos as alterações na máquina.</p>
-    <img src="https://git-scm.com/figures/18333fig0101-tn.png" alt="Local" class="w3-image" width="400" height="400">
+    <img src="https://git-scm.com/figures/18333fig0101-tn.png" alt="Local" class="locais" width="400" height="400">
     <p><b>O que é GIT?</b></p>
     <p>Git é um controle de versões, desenvolvido por Linus Torvalds. Ele é usado
         para "controlar as versões". No Git, são armazenados snapshots, ou seja, é como se fosse uma
@@ -131,12 +157,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h2 class="w3-text-light-grey">PYTEST</h2>
     <hr style="width:200px" class="w3-opacity">
     <p> Pyteste é um framwork que serve basicamente para o programador
-        fazer testes, ele deve ser escrito na linguagem python e o arquivo deve
-        estar com final ".py". Para fazer a execução, o usuário
+        fazer testes, ele deve ser escrito na linguagem Python e o arquivo deve
+        estar com final ".py". Ele é de código-aberto e para fazer a execução, o usuário
         deverá ir no terminal do aplicativo que está usando e
         realizar a instalação com o comando pip install pytest
         e logo depois digitar pytest prosseguido do nome do arquivo. Abaxio está a 
-        foto da resposta gerada de um teste realizado.
+        foto da resposta gerada de um teste realizado. 
     </p>  
     <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200808170405/EqPytestOuput.png" alt="Pytest" class="w3-image" width="800" height="800">
     <p>Fonte - Google Imagens</p>
@@ -145,12 +171,33 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-padding-64 w3-content" id="flask">
     <h2 class="w3-text-light-grey">FLASK</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p> Flask foi criado por Armin Ronacher, ele é um micro-framwork que usa a
+    <p>Antes de entender o que é Flask, é necessário um breve conhecimento de Framework e Micro-Framework, então vamos lá!</p>
+    <p><b>O que é Framwork e Micro-Framework?</b></p>
+    <p>Framwork são códigos prontos com várias funções que serão utilizadas no desenvolvimento de sites.
+    Com isso, ele ajuda você a simplificar a criação de projetos, pois você não precisa iniciar do zero. Segundo o site da lewagon, "ele funciona basicamento como uma peça de quebra-cabeça", já que você vai encaixando ele e conectanto
+    as demais linhas dos códigos. Já os Micro-Framwork são Frameworks "modularizados" mais simples, que permite você executar módulos na ordem correta e lhe ajuda a se organizar.</p>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="https://i0.wp.com/uilblognews.com/wp-content/uploads/2019/05/Framework.jpg?fit=1920%2C1080&ssl=1" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="https://i.imgur.com/5HCEe0b.png" alt="House" style="width:100%">
+      </div>
+  </div>
+    <p><b>O que é Flask?</b></p>
+    <p> criado por Armin Ronacher, ele é um micro-framwork que usa a
         linguagem Python para criar aplicações web, ele oferece simplicidade e flexibilidade
-        para o desenvolvedor. Mas o que de fato é um framwork? Bom, framwork nada mais é do que
-        códigos prontos com várias funções que serão utilizadas no desenvolvimento de sites.
-        Ou seja, ele ajuda você a simplificar o desenvolvimento, pois você não precisa iniciar
-        seu programa do zero.
+        para o desenvolvedor. Por mais que ele seja um "micro", o Flask pode ser usado tanto em
+        projetos grandes como pequenos.
+    </p>
+
+
     </p>  
     <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aTrBq-3N4t5iJFdQLsDQHbWA1leBTD8Qzw&usqp=CAU" alt="Pytest" class= "flask" width="600" height="400" border-radius= "50%">
     <p>Fonte - Google Imagens</p>
