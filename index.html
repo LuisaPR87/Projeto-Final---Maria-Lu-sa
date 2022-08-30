@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -27,6 +28,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+
 }
 
 .locais{
@@ -36,17 +38,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   width: 50%;
 }
 
-.box{
-
-  width: 150px;
-  display: inline-block;
+.flask{
+  
+  width: 100%;
+  text-align: center;
 }
 
-.box2{
 
-  width: 150px;
-  display: inline-block;
-}
 
 #main {margin-left: 120px}
 
@@ -60,52 +58,57 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   <img src="https://img.freepik.com/vetores-premium/icone-de-linha-de-vetor-minimo-de-tempo-de-estudo-no-botao-3d-isolado-em-fundo-preto-vetor-premium_570929-1066.jpg" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
+  <a href="#Git" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-github w3-xxlarge"></i>
     <p>GIT E GIT HUB</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
+  <a href="#pytest" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="  fa fa-plus-square-o w3-xxlarge"></i>
     <p>PYTEST</p>
   </a>
   <a href="#flask" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-   
-    <img src="https://www.seekpng.com/png/detail/875-8753366_flask-framework-logo-svg.png" class ="logoflask">
+    <i class ="fa fa-plus-square-o w3-xxlarge"></i>
     <p>FLASK</p>
   </a>
+  <a href="#referencias" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-plus-square-o w3-xxlarge"></i>
+    <p>REFERÊNCIA </p>
+  </a>
+
+
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
+    <p>FEEDBACK</p>
   </a>
 </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#Git" class="w3-bar-item w3-button" style="width:25% !important">GIT E GIT HUB</a>
+    <a href="#pytest" class="w3-bar-item w3-button" style="width:25% !important">PYTEST</a>
     <a href="#flask" class="w3-bar-item w3-button" style="width:25% !important">FLASK</a>
+    <a href="#referencias" class="w3-bar-item w3-button" style="width:25% !important">REFERÊNCIAS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+ 
   </div>
 </div>
 
-<!-- Page Content -->
+
 <div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
+
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">Sejam bem vindos!</h1>
     
-    <img src="https://blogdageografia.com/wp-content/uploads/2022/02/nature-g57cb42492_1280-1024x575.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/03/54/36/61579a01a330a86.jpg" alt="boy" class="w3-image" width="992" height="1108">
+   
   </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">GIT</h2>
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Git">
+    <h2 class="w3-text-light-grey">GIT E GITHUB</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>Primeiramente, antes de tentar entender o que é GitHub, é necessário
         saber o conceito de controle de versão e Git. Então, vamos lá!
@@ -116,23 +119,50 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           ao longo do tempo, para assim, você se lembrar das versões e recuperar elas. Existem 3
           tipos de controle de versão, são eles: Centralizados, Distribuidos e Locais.</p>
     <p><b> &rarr; Centralizados:</b> Desenvolvedores trabalham juntos em um único projeto, tendo apenas um repositório.</p>
-    <img src="https://git-scm.com/figures/18333fig0102-tn.png" alt="Centralizado" class="centralizado" width="400" height="400">
-    <p>- <b>Distribuidos:</b> Os desenvolvedores do projeto podem trabalhar juntos ao mesmo tempo,
+  <div>
+    <div class="w3-row-padding">
+    <div class="centralizado">
+      <img src="https://git-scm.com/figures/18333fig0102-tn.png" style="width:90%" align="w3-center" onclick="onClick(this)" alt="Centralizados">
+     
+    </div>
+  </div>
+    <p><b> &rarr; Distribuidos:</b> Os desenvolvedores do projeto podem trabalhar juntos ao mesmo tempo,
       com isso, ele é recomendado para projetos que possuem mais de um desenvolvedor onde, todo o repositório é
       copiado.</p>
-    <img src= 'https://jkolb.com.br/wp-content/uploads/2018/04/distribuido.png' alt = 'Distribuido' class="distribuido" width="400" height="400">
-    <p><b>Locais:</b> Ele armazena todos as alterações na máquina.</p>
-    <img src="https://git-scm.com/figures/18333fig0101-tn.png" alt="Local" class="locais" width="400" height="400">
+  <div>
+    <div class="w3-row-padding">
+    <div class="distribuido">
+      <img src="https://jkolb.com.br/wp-content/uploads/2018/04/distribuido.png" style="width:90%" align="w3-center" onclick="onClick(this)" alt="Distribuido">
+    
+    </div>
+  </div>
+    
+    <p><b> &rarr; Locais:</b> Ele armazena todos as alterações na máquina.</p>
+  <div>
+    <div class="w3-row-padding">
+    <div class="distribuido">
+      <img src="https://git-scm.com/figures/18333fig0101-tn.png" style="width:90%" align="w3-center" onclick="onClick(this)" alt="Locais">
+    
+    </div>
+  </div>
+  
     <p><b>O que é GIT?</b></p>
     <p>Git é um controle de versões, desenvolvido por Linus Torvalds. Ele é usado
         para "controlar as versões". No Git, são armazenados snapshots, ou seja, é como se fosse uma
-        foto da situação do sistema naquela hora .Outra caracterísica importante de ressaltar é que
+        foto da situação do sistema naquela hora. Outra caracterísica importante de ressaltar é que
         quando uma pessoa faz alguma alteração no trabalho é gerado uma nova versão. Ele registra três estados, são eles: consolidade
         (commited), modificado(modified) e preparado(staged).</p>
     <p>> Consolidade: Ficam armazenados na base local.<br/>
        > Modificado: O arquivos sofre modificações, porém ainda não teve commit.<br/>
        > Praparado: Arquivos que irão fazer parte do próximo snapshot.</p>
-    <img src="https://i.stack.imgur.com/QaeAZ.png" alt="Estados git" class="w3-image" width="400" height="400">
+  <div>
+    <div class="w3-row-padding">
+    <div class="distribuido">
+      <img src="https://i.stack.imgur.com/QaeAZ.png" style="width:90%" align="w3-center" onclick="onClick(this)" alt="Estado do GIT">
+    
+    </div>
+  </div>
+    
     <p>O git também possui vários comandos, abaixo estão listados alguns.</p>
        
     <p> Git innit: Para inicializar.<br/>
@@ -141,19 +171,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         Git status: Para saber quais arquivos estão em quais estados.<br/>
         Git log: Com ele você pode visualizar o que vem sendo feito em uma branch ou avaliar alterações.
     </p>
-    <p><b>O que é Git Hub</b></p>
+    <p><b>O que é Git Hub?</b></p>
     <p>Git Hub é um servidor git remoto, onde você hospeda os arquivos que estão sendo utilizados
        no Git. Ele trabalha com repositórios(Pastas do Git para poder armazenar).
     <p><b>Qual a importância do GitHub?</b></p>
     <p> A pertir dele, os projetos podem ser desenvolvidos por diversas pessoas de lugares diferentes.
         
     </p>
-         
-    <img src="https://www.tadviser.ru/images/d/d6/Thumbnail_1650288823.jpg" alt="git hub" class="w3-image" width="400" height="400">
-
+  <div>
+    <div class="w3-row-padding">
+    <div class="distribuido">
+      <img src="https://www.tadviser.ru/images/d/d6/Thumbnail_1650288823.jpg" style="width:90%" align="w3-center" onclick="onClick(this)" alt="GITHUB">
+    
+    </div>
+  </div>
+    
   <div>
       
-  <div class="w3-padding-64 w3-content" id="photos">
+  <div class="w3-padding-64 w3-content" id="pytest">
     <h2 class="w3-text-light-grey">PYTEST</h2>
     <hr style="width:200px" class="w3-opacity">
     <p> Pyteste é um framwork que serve basicamente para o programador
@@ -164,74 +199,96 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         e logo depois digitar pytest prosseguido do nome do arquivo. Abaxio está a 
         foto da resposta gerada de um teste realizado. 
     </p>  
-    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200808170405/EqPytestOuput.png" alt="Pytest" class="w3-image" width="800" height="800">
-    <p>Fonte - Google Imagens</p>
+  <div>
+    <div class="w3-row-padding">
+    <div class="pytest">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200808170405/EqPytestOuput.png" width="900" height="250" align="w3-center", onclick="onClick(this)" alt="Teste do Pytest">
+    </div>
+  </div>
+    
   </div>
 
+  
+</div>
+<div>
   <div class="w3-padding-64 w3-content" id="flask">
     <h2 class="w3-text-light-grey">FLASK</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>Antes de entender o que é Flask, é necessário um breve conhecimento de Framework e Micro-Framework, então vamos lá!</p>
     <p><b>O que é Framwork e Micro-Framework?</b></p>
-    <p>Framwork são códigos prontos com várias funções que serão utilizadas no desenvolvimento de sites.
-    Com isso, ele ajuda você a simplificar a criação de projetos, pois você não precisa iniciar do zero. Segundo o site da lewagon, "ele funciona basicamento como uma peça de quebra-cabeça", já que você vai encaixando ele e conectanto
+    <p>
+    
+      Frameworks são  códigos prontos com várias funções que serão utilizadas no desenvolvimento de sites. Com isso, ele ajuda você a simplificar a criação de projetos, pois você não precisa iniciar do zero. Segundo o site da lewagon, "ele funciona basicamento como uma peça de quebra-cabeça", já que você vai encaixando ele e conectanto
     as demais linhas dos códigos. Já os Micro-Framwork são Frameworks "modularizados" mais simples, que permite você executar módulos na ordem correta e lhe ajuda a se organizar.</p>
 
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="https://i0.wp.com/uilblognews.com/wp-content/uploads/2019/05/Framework.jpg?fit=1920%2C1080&ssl=1" alt="House" style="width:100%">
-      </div>
+    <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://fptcloud.com/wp-content/uploads/2022/06/chac-chan-nhung-ai-lam-trong-linh-vuc-cong-nghe-deu-hieu-framework-la-gi.png" style="width:90%" onclick="onClick(this)" alt="Frameworks", >
+    
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="https://i.imgur.com/5HCEe0b.png" alt="House" style="width:100%">
-      </div>
+
+    <div class="w3-half">
+      <img src="https://dkrn4sk0rn31v.cloudfront.net/2019/12/19182404/micro-framework.png" style="width:100%" onclick="onClick(this)" alt="Micro-Framework">
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
   </div>
+  </div>
+</div>
     <p><b>O que é Flask?</b></p>
     <p> criado por Armin Ronacher, ele é um micro-framwork que usa a
         linguagem Python para criar aplicações web, ele oferece simplicidade e flexibilidade
         para o desenvolvedor. Por mais que ele seja um "micro", o Flask pode ser usado tanto em
         projetos grandes como pequenos.
     </p>
+  <div>
+  <div>
+    <div class="w3-row-padding">
+    <div class="flask">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aTrBq-3N4t5iJFdQLsDQHbWA1leBTD8Qzw&usqp=CAU" style="width:50%", onclick="onClick(this)" alt="Teste do Pytest">
+    </div>
+  </div> 
+   
+  
+  <div class="w3-padding-64 w3-content" id="referencias">
+    <h2 class="w3-text-light-grey">REFERÊNCIAS</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p><b><a href="https://www.treinaweb.com.br/blog/o-que-e-um-micro-framework" target="_blank">Link do BlocoTreinaWeb</a></b></p>
+    <p><b><a href="https://rockcontent.com/br/blog/o-que-e-github/" target="_blank">Link do Rockcontent</a></b></p>
+    <p><b><a href="https://www.w3schools.com/default.asp" target="_blank">Link do W3Schools</a></b></p>
+    <p>Figuras - Google Fotos</p>
 
-
-    </p>  
-    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aTrBq-3N4t5iJFdQLsDQHbWA1leBTD8Qzw&usqp=CAU" alt="Pytest" class= "flask" width="600" height="400" border-radius= "50%">
-    <p>Fonte - Google Imagens</p>
-    
 
   </div>
 
-  <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <h2 class="w3-text-light-grey">FEEDBACK</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> CAJAZEIRAS, BR</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> TELEFONE: +55 12130098</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: siteluisa@gmail.com</p>
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
+    <p>Mande aqui seu Feedback:</p>
 
     <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Sugestões" required name="Sugestões"></p>
+    
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fa fa-paper-plane"></i> ENVIAR
         </button>
       </p>
     </form>
-  <!-- End Contact Section -->
+
   </div>
-  
-    <!-- Footer -->
+ 
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -239,12 +296,38 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
+    
+
   </footer>
 
-<!-- END PAGE CONTENT -->
+
 </div>
+
+
+<script>
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
+
+
 
 </body>
 </html>
